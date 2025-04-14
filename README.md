@@ -166,11 +166,27 @@ This work is inspired by:
 
 
 ---
+
 ## 🧠 Credits
-* Built by Yusra Abdulrahman, 2025
-* Supervised by []
-* University of Duisburg Essen
+
+* Built by **Yusra Abdulrahman**, 2025  
+* Supervised by:
+  - [Prof. Dr.-Ing. Torben Weis](https://www.vs.uni-due.de/person/weis/) – University of Duisburg-Essen
+  - [Prof. Dr. Gregor Schiele](https://www.uni-due.de/es/gregor_schiele_de.php) – University of Duisburg-Essen
+  - [Dr. Daniel Tebernum](https://github.com/DaTebe) – Fraunhofer ISST
+  - [René Brinkhege](https://github.com/renebrinkhege) – Fraunhofer ISST
+  - [Ronja Quensel](https://github.com/ronjaquensel) – Fraunhofer ISST
+  - [Dominic Marcinkowski](https://github.com/Marcinkowski-D) – University of Duisburg-Essen
+
+
+This project was conducted as part of a Master’s thesis under the joint supervision of:
+
+- 🎓 **[University of Duisburg-Essen](https://www.uni-due.de/)**  
+- 🏢 **[Fraunhofer Institute for Software and Systems Engineering (ISST)](https://www.isst.fraunhofer.de/)**
+
+Special thanks to all supervisors and research mentors for their support and guidance throughout the project.
 
 ---
+
 ## 🛡 License
 Open for academic and research use.
