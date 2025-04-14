@@ -26,30 +26,41 @@ It uses:
 ---
 
 ## 📁 Folder Structure
+
+<pre>
 bidirectional-transformers-odrl-to-text/ 
-├── scripts/ 
-│ ├── odrl_to_instructions.py # ODRL → Text 
-│ ├── instructions_to_odrl.py # Text → ODRL (.ttl / .jsonld) 
-│ ├── validate_and_fix_odrl.py # SHACL validator 
-│ ├── fuzzy_match_score.py # Fuzzy round-trip scoring 
-│ ├── round_trip_test.py # Complete round-trip pipeline 
-│ └── gradio_ui.py # Gradio web app 
-├── templates/ 
-│ ├── to_odrl_prompt.md 
-│ └── to_nl_prompt.md 
-├── data/ 
-│ ├── instructions/ # Plain text inputs 
-│ └── odrl_examples/ # RDF / JSON-LD files 
-├── output/ 
-│ ├── generated_odrl/ 
-│ ├── generated_text/ 
-│ ├── round_trip/ 
-│ └── validation_reports/ 
-├── odrl_policy_validation_shapes/ 
-│ └── odrl_policy_shapes.ttl # SHACL rules 
-├── config.json # LLM API configuration 
-├── requirements.txt # Python dependencies 
-└── README.md
+  ├── scripts/ 
+  │ ├── odrl_to_instructions.py # ODRL → Text 
+  │ ├── instructions_to_odrl.py # Text → ODRL (.ttl / .jsonld) 
+  │ ├── validate_and_fix_odrl.py # SHACL validator 
+  │ ├── fuzzy_match_score.py # Fuzzy round-trip scoring 
+  │ ├── test.py # Complete round-trip pipeline 
+  │ └── gradio_ui.py # Gradio web app 
+  │
+  ├── templates/ 
+  │ ├── to_odrl_prompt.md 
+  │ └── to_nl_prompt.md 
+  │
+  ├── data/ 
+  │ ├── instructions/ # Plain text inputs 
+  │ └── odrl_examples/ # RDF / JSON-LD files 
+  │
+  ├── output/ 
+  │ ├── generated_odrl/ 
+  │ ├── generated_text/ 
+  │ ├── pipeline_test/ 
+  │ └── validation_reports/ 
+  │
+  ├── odrl_policy_validation/ 
+  │ └── odrl_policy_shapes.ttl # SHACL rules 
+  │
+  ├── config.json # LLM API configuration 
+  │
+  ├── requirements.txt # Python dependencies 
+  │
+  └── README.md
+</pre>
+
 
 
 ---
