@@ -1,0 +1,19 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<#policy>
+    a odrl:Policy ;
+    odrl:uuid "urn:uuid:4f5bbee6-1c8d-44e0-83c9-ba84c92c9257" ;
+    odrl:permission <#permission> ;
+    dct:description "User A is allowed to play video1 for non-commercial use." .
+
+<#permission>
+    a odrl:Permission ;
+    odrl:action odrl:play ;
+    odrl:asset <http://example.org/video1> ;
+    odrl:constraint <#constraint> .
+
+<#constraint>
+    a odrl:Constraint ;
+    odrl:operator odrl:eq ;
+    odrl:rights odrl:nonCommercialUse .

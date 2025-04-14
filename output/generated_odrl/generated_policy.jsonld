@@ -1,0 +1,27 @@
+{
+  "@context": "https://www.w3.org/ns/odrl.jsonld",
+  "@type": "odrl:Policy",
+  "uid": "http://example.com/policy/123",
+  "profile": "http://example.com/profile/basic",
+  "permission": [
+    {
+      "@type": "odrl:Permission",
+      "action": "play",
+      "asset": "http://example.com/video1",
+      "constraint": [
+        {
+          "@type": "odrl:Constraint",
+          "operator": "eq",
+          "right": "non-commercial"
+        }
+      ]
+    }
+  ],
+  "party": [
+    {
+      "@type": "odrl:Party",
+      "uid": "http://example.com/user/A",
+      "function": "assignee"
+    }
+  ]
+}

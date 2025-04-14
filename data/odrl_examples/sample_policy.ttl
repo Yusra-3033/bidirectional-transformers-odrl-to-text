@@ -1,0 +1,15 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix ex: <http://example.com/policy/> .
+
+ex:policy1 a odrl:Policy ;
+  odrl:permission [
+    odrl:target <http://example.com/content/video1> ;
+    odrl:action odrl:play ;
+    odrl:assignee <http://example.com/user/UserA> ;
+    odrl:assigner <http://example.com/org/ProviderX> ;
+    odrl:constraint [
+      odrl:leftOperand odrl:purpose ;
+      odrl:operator odrl:eq ;
+      odrl:rightOperand "non-commercial"
+    ]
+  ] .

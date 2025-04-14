@@ -1,0 +1,14 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+
+# Ensure that every Permission must have a target and an action
+[] a sh:NodeShape ;
+   sh:targetClass odrl:Permission ;
+   sh:property [
+     sh:path odrl:target ;
+     sh:minCount 1 ;
+   ] ;
+   sh:property [
+     sh:path odrl:action ;
+     sh:minCount 1 ;
+   ] .

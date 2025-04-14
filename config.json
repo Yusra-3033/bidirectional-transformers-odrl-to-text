@@ -1,0 +1,5 @@
+{
+    "llm_provider": "ollama",
+    "ollama_base_url": "http://153.96.23.232/ollama/api/chat",
+    "ollama_model": "llama3.3:70b"
+}
