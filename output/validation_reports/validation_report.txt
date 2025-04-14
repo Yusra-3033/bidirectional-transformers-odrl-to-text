@@ -1,9 +1,2 @@
 Validation Report
-Conforms: False
-Results (1):
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:minCount Literal("1", datatype=xsd:integer) ; sh:path odrl:target ]
-	Focus Node: <file:///home/yusra/IdeaProjects/odrl_bidirectional_project/output/generated_odrl/generated_policy.ttl#permission>
-	Result Path: odrl:target
-	Message: Less than 1 values on <file:///home/yusra/IdeaProjects/odrl_bidirectional_project/output/generated_odrl/generated_policy.ttl#permission>->odrl:target
+Conforms: True

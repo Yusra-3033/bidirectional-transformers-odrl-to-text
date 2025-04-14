@@ -1,27 +1,45 @@
 {
   "@context": "https://www.w3.org/ns/odrl.jsonld",
-  "@type": "odrl:Policy",
-  "uid": "http://example.com/policy/123",
-  "profile": "http://example.com/profile/basic",
-  "permission": [
+  "@graph": [
     {
-      "@type": "odrl:Permission",
-      "action": "play",
-      "asset": "http://example.com/video1",
-      "constraint": [
+      "@id": "_:policy",
+      "@type": "odrl:Policy",
+      "odrl:assigner": {
+        "@id": "_:userA"
+      },
+      "odrl:assignee": {
+        "@id": "_:userA"
+      },
+      "odrl:permission": [
         {
-          "@type": "odrl:Constraint",
-          "operator": "eq",
-          "right": "non-commercial"
+          "@id": "_:permission1",
+          "@type": "odrl:Permission",
+          "odrl:action": {
+            "@id": "odrl:play"
+          },
+          "odrl:target": {
+            "@id": "video1"
+          },
+          "odrl:constraint": [
+            {
+              "@id": "_:constraint1",
+              "@type": "odrl:Constraint",
+              "odrl:name": "odrl:usage",
+              "odrl:value": "non-commercial"
+            }
+          ]
         }
       ]
-    }
-  ],
-  "party": [
+    },
     {
+      "@id": "_:userA",
       "@type": "odrl:Party",
-      "uid": "http://example.com/user/A",
-      "function": "assignee"
+      "odrl:label": "User A"
+    },
+    {
+      "@id": "video1",
+      "@type": "odrl:Asset",
+      "odrl:label": "Video 1"
     }
   ]
 }
