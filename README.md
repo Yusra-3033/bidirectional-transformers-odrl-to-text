@@ -101,7 +101,7 @@ python scripts/instructions_to_odrl.py
 python scripts/validate_and_fix_odrl.py
 ```
 
-➤ Consistency Test: 🧠 ODRL → text → ODRL again, it checks if they match (or at least are semantically equivalent).
+➤ Consistency Test: ODRL → text → ODRL again, it checks if they match or at least are semantically equivalent.
 ```bash
 python scripts/test.py
 ```
